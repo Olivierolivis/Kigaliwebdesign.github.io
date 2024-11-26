@@ -1,0 +1,43 @@
+.logohead {
+    float: left;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: deeppink;
+    font-weight: 600;
+}
+.logohead span {
+    font-size: 40px;
+    color: darkorchid;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    color: darkorchid;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader .fa {
+   font-size: 90px;
+}
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.submit {
+    background-color: #b636ff;
+    font-size: 19px;
+    word-spacing: 2;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+}
+.submit:hover {
+    background-color: #721da3; 
+}
