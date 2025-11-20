@@ -1,96 +1,541 @@
-@media screen and (max-width:1680px){
+/* ===============================================
+   RESPONSIVE ENHANCEMENTS FOR KIGALI WEB DESIGN
+   =============================================== */
 
-}/*max-width:1680px*/
-@media screen and (max-width:1440px){
-	.single-about-img img {max-width:100%;}
-	.single-about-img:before,.about-list-icon{width: 100%;}
-}/*max-width:1440px*/
+/* Base Responsive Utilities */
+* {
+    box-sizing: border-box;
+}
 
-@media screen and (max-width:1199px){
-	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 8px;}
-	
-	.welcome-hero {height: 768px;}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-	.timeline-content span>i, .experience-time span>i {left: -15.5%;}
-}/*max-width:1199px*/
+/* Loader Responsive */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-@media screen and (max-width:1024px){
+/* ===============================================
+   MOBILE FIRST: Base Styles (320px+)
+   =============================================== */
 
+/* Navigation Improvements */
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 15px;
+}
 
-}/*max-width:1024px*/
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-@media screen and (max-width:1008px){
-	nav.navbar.bootsnav ul.nav > li.dropdown span.megamenu-title  {display:block;color: #43465d;font-size: 18px;}
-	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li .megamenu-sub-title a {margin-top: 20px;font-size: 14px;}
-	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li .megamenu-sub-txt a{margin-bottom: 15px;}
-}/*max-width:1008px*/
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
 
-@media screen and (max-width:992px){
-	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
-	nav.navbar.bootsnav .navbar-toggle {display: inline-block; float: right;margin-right: 0;margin-top: 21px;}
-	nav.navbar.bootsnav .navbar-brand {float: left!important;}
-	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
-}/*max-width:992px*/
+.logohead {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
 
-@media screen and (max-width:991px){
-	.experience-time-responsive{display: block;}
-	.experience-time-main{display: none;}
-	.experience-time,.timeline-content{text-align: left;margin-bottom: 20px;margin-left: 40px;}
-	.timeline-content span>i{left: 0%;top: -54%;}
-	.experience-time span>i {left: -6%;top: 6%;}
-	.main-timeline:before {left:0.4%;}
+.logohead img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
 
-	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
-}/*max-width:991px*/
+/* Welcome Hero Section */
+#welcome-hero {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
-@media screen and (max-width:768px){
+.header-text h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.header-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 15px;
+}
+
+.header-text a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.single-about-txt h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.single-about-add-info {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.single-about-add-info h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.single-about-add-info p {
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.single-about-img {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.single-about-img img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.about-list-icon ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.about-list-icon ul li {
+    list-style: none;
+}
+
+.about-list-icon ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Profiles Section */
+#profiles {
+    padding: 60px 0;
+}
+
+.single-profile {
+    margin-bottom: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.profile-txt i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.profile-icon-name {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 0;
+}
+
+.item {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.isotope-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .isotope-overlay {
+    opacity: 1;
+}
+
+.isotope-overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+/* Clients Section */
+#clients {
+    padding: 60px 0;
+}
+
+.owl-carousel .item {
+    padding: 20px;
+    text-align: center;
+}
+
+.owl-carousel .item img {
+    display: inline-block;
+    max-width: 150px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-adress {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-add-head h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-add-head p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.single-contact-add-info {
+    margin-bottom: 20px;
+}
+
+.single-contact-add-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.single-contact-add-info p {
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.hm-foot-icon ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.hm-foot-icon ul li {
+    list-style: none;
+}
+
+.hm-foot-icon ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+#footer-copyright {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.hm-footer-copyright p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#scroll-Top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.return-to-top {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.return-to-top i {
+    font-size: 20px;
+}
+
+/* ===============================================
+   TABLET: 576px and up
+   =============================================== */
+@media (min-width: 576px) {
+    .header-text h2 {
+        font-size: 36px;
+    }
     
-}/*max-width:768px*/
+    .header-text p {
+        font-size: 16px;
+        padding: 0 30px;
+    }
+    
+    .section-heading h2 {
+        font-size: 32px;
+    }
+    
+    .single-about-txt h3 {
+        font-size: 20px;
+    }
+    
+    .logohead img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .logohead {
+        font-size: 18px;
+    }
+}
 
-@media screen and (max-width:767px){
-	.single-about-img {max-width: 450px;}
-	.experience-time span>i,.timeline-content span>i,.main-timeline:before {display: none;}
-	.experience-time, .timeline-content {margin-left: 0;}
+/* ===============================================
+   TABLET LANDSCAPE: 768px and up
+   =============================================== */
+@media (min-width: 768px) {
+    .header-text h2 {
+        font-size: 45px;
+    }
+    
+    .header-text p {
+        font-size: 18px;
+        padding: 0 50px;
+    }
+    
+    .section-heading h2 {
+        font-size: 36px;
+    }
+    
+    .single-about-txt h3 {
+        font-size: 22px;
+    }
+    
+    .single-about-add-info {
+        text-align: left;
+    }
+    
+    .single-about-img {
+        margin-top: 0;
+    }
+    
+    .about-list-icon ul {
+        justify-content: flex-start;
+    }
+    
+    .logohead img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .logohead {
+        font-size: 20px;
+    }
+    
+    .contact-form {
+        margin-bottom: 0;
+    }
+    
+    .profile-border {
+        height: 1px;
+        background: #ddd;
+        margin: 30px 0;
+    }
+}
 
-	.isotope .item {max-width: 350px;margin: 0 auto 30px;}
+/* ===============================================
+   DESKTOP: 992px and up
+   =============================================== */
+@media (min-width: 992px) {
+    .header-text h2 {
+        font-size: 55px;
+    }
+    
+    .section-heading h2 {
+        font-size: 40px;
+    }
+    
+    .single-about-txt h3 {
+        font-size: 24px;
+    }
+    
+    .profile-txt i {
+        font-size: 50px;
+    }
+    
+    .profile-icon-name {
+        font-size: 16px;
+    }
+}
 
-	.single-profile {max-width: 350px; margin: 30px auto;border: 0;}
-	.profile-border{border: 0;}
+/* ===============================================
+   LARGE DESKTOP: 1200px and up
+   =============================================== */
+@media (min-width: 1200px) {
+    .header-text h2 {
+        font-size: 65px;
+    }
+    
+    .header-text p {
+        font-size: 20px;
+    }
+    
+    .section-heading h2 {
+        font-size: 45px;
+    }
+}
 
-	.single-horizontal-timeline {max-width: 350px;margin: 30px auto;}
+/* ===============================================
+   EXTRA SMALL DEVICES: Fix for very small screens
+   =============================================== */
+@media (max-width: 375px) {
+    .header-text h2 {
+        font-size: 24px;
+    }
+    
+    .header-text p {
+        font-size: 13px;
+    }
+    
+    .logohead {
+        font-size: 14px;
+    }
+    
+    .logohead img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .section-heading h2 {
+        font-size: 24px;
+    }
+}
 
-}/*max-width:767px*/
+/* ===============================================
+   LANDSCAPE ORIENTATION FIXES
+   =============================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    #welcome-hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .header-text h2 {
+        font-size: 32px;
+    }
+}
 
-@media screen and (max-width: 660px){
-
-}/*max-width:660px*/
-
-@media screen and (max-width: 640px){
-
-}/*max-width:640px*/
-
-@media screen and (max-width: 580px){
-
-}/*max-width:580px*/
-
-@media screen and (max-width: 540px){
-	.subscribe-title h2 {font-size: 24px;}
-
-}/*max-width:540px*/
-
-@media screen and (max-width: 480px){
-	
-}/*max-width:480px*/
-
-@media screen and (max-width: 440px){
-	
-}/*max-width:400px*/
-
-@media screen and (max-width:350px){
-
-}/*max-width:350px*/
-
-@media screen and  (max-width: 320px){
-	
-}/*max-width:320px*/
-
+/* ===============================================
+   PRINT STYLES
+   =============================================== */
+@media print {
+    .navbar,
+    #scroll-Top,
+    .contact-form {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+}
