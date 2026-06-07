@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cinemanova.kesug.com/sitemap.xml
+Sitemap: https://Kigaliwebdesign.vercel.app/sitemap.xml
