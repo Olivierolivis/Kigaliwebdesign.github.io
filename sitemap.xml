@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Kigaliwebdesign.vercel.app</loc>
-    <lastmod>2026-01-01</lastmod>
+    <loc>https://Kigaliwebdesign.vercel.app/</loc>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Add dynamic movie URLs here, e.g., https://cinemanova.kesug.com/details.php?id=1 -->
+  <!-- Add dynamic movie URLs here, e.g., https://Kigaliwebdesign.vercel.app/details.php?id=1 -->
 </urlset>
